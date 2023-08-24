@@ -1,3 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+import "./index.css"
+
 const parent = React.createElement(
   "div",
   { id: "parent" },
@@ -8,15 +13,12 @@ const parent = React.createElement(
   )
 );
 
-const heading = [React.createElement(
-    "h1",
-    { id: "heading" },
-    "Hello World From React!"
-  ), React.createElement(
-    "h2",
-    { id: "heading" },
-    "Hello World From React!"
-  )];
+const heading = React.createElement(
+  "h1",
+  { id: "heading" },
+  "Hello World From React!"
+);
+
 console.log(parent);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
